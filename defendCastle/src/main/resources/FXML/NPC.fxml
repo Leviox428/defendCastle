@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="NPCV" alignment="CENTER" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="defendCastle.movable.npc.NPCController">
+   <children>
+      <Polygon fx:id="selectionTriangle" disable="true" fill="#ff2929" rotate="180.0" stroke="BLACK" strokeType="INSIDE" translateY="8.0">
+         <points>
+            <Double fx:value="-5.0" />
+            <Double fx:value="10.0" />
+            <Double fx:value="5.0" />
+            <Double fx:value="10.0" />
+            <Double fx:value="0.0" />
+            <Double fx:value="0.0" />
+         </points>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Polygon>
+      <ProgressBar fx:id="healthBar" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="20.0" progress="1.0" translateY="8.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ProgressBar>
+      <ImageView fx:id="NPCHitbox" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Misc/NPCS/Knight/AttackAnimation/attack1_5.png" />
+         </image>
+      </ImageView>
+   </children>
+</VBox>

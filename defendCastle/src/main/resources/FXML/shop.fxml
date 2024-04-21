@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fx:id="itemStoreScrollPane" prefHeight="200.0" prefWidth="200.0" visible="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="defendCastle.buildings.controllers.ShopController">
+    <content>
+        <Pane prefHeight="344.0" prefWidth="425.0" style="-fx-background-color: white; -fx-border-color: black;">
+            <children>
+                <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="338.0" prefWidth="421.0">
+                    <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="284.0" prefWidth="352.0">
+                            <children>
+                                <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="150.0" spacing="5.0">
+                                    <children>
+                                        <Label style="-fx-border-color: black; -fx-border-radius: 3; -fx-background-color: #4B371C;" text="Axe" textFill="WHITE">
+                                            <font>
+                                                <Font name="Bookman Old Style" size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="50.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Misc/Items/axe.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label lineSpacing="1.0" text="+ 1 wood gathering speed" textAlignment="CENTER" wrapText="true" />
+                                        <Label layoutX="14.0" layoutY="120.0" text="+ 1 wood" textAlignment="CENTER" wrapText="true" />
+                                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="88.0">
+                                            <children>
+                                                <Label fx:id="knightGoldCost1" text="50" translateX="-5.0">
+                                                    <font>
+                                                        <Font name="Bookman Old Style" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../Misc/Resources/Coin.png" />
+                                                    </image>
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </ImageView>
+                                            </children>
+                                        </HBox>
+                                        <Label fx:id="woodUpgradeNumberLabel">
+                                            <font>
+                                                <Font name="Bookman Old Style" size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <HBox alignment="CENTER">
+                                            <children>
+                                                <Label fx:id="knightTrainingSpeed1">
+                                                    <font>
+                                                        <Font name="Bookman Old Style" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <Button contentDisplay="CENTER" graphicTextGap="0.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#buyUpgrade" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: #4B371C; -fx-border-color: black; -fx-background-radius: 50%; -fx-border-radius: 50%;" text="Wood" textAlignment="CENTER" textFill="TRANSPARENT">
+                                                    <cursor>
+                                                        <Cursor fx:constant="CROSSHAIR" />
+                                                    </cursor>
+                                                    <graphic>
+                                                        <ImageView fitHeight="33.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                                            <cursor>
+                                                                <Cursor fx:constant="DEFAULT" />
+                                                            </cursor>
+                                                            <image>
+                                                                <Image url="@../Misc/Buildings/Blacksmith/money-bag.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                    <HBox.margin>
+                                                        <Insets top="2.0" />
+                                                    </HBox.margin>
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                                </Button>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </VBox>
+                                <VBox alignment="TOP_CENTER" layoutX="93.0" layoutY="10.0" prefHeight="200.0" prefWidth="150.0" spacing="5.0">
+                                    <children>
+                                        <Label style="-fx-border-color: black; -fx-border-radius: 3; -fx-background-color: #4B371C;" text="Pickaxe" textFill="WHITE">
+                                            <font>
+                                                <Font name="Bookman Old Style" size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="50.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Misc/Items/pickaxe.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label lineSpacing="1.0" text="+ 1 stone gathering speed" textAlignment="CENTER" wrapText="true" />
+                                        <Label text="+ 1 stone" textAlignment="CENTER" wrapText="true" />
+                                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="88.0">
+                                            <children>
+                                                <Label fx:id="archerGoldCost1" text="50" translateX="-5.0">
+                                                    <font>
+                                                        <Font name="Bookman Old Style" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../Misc/Resources/Coin.png" />
+                                                    </image>
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </ImageView>
+                                            </children>
+                                        </HBox>
+                                        <Label fx:id="stoneUpgradeNumberLabel">
+                                            <font>
+                                                <Font name="Bookman Old Style" size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <HBox alignment="CENTER">
+                                            <children>
+                                                <Label fx:id="archerTrainingSpeed1">
+                                                    <font>
+                                                        <Font name="Bookman Old Style" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <Button contentDisplay="CENTER" graphicTextGap="0.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#buyUpgrade" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: #4B371C; -fx-border-color: black; -fx-background-radius: 50%; -fx-border-radius: 50%;" text="Stone" textFill="TRANSPARENT">
+                                                    <cursor>
+                                                        <Cursor fx:constant="CROSSHAIR" />
+                                                    </cursor>
+                                                    <HBox.margin>
+                                                        <Insets top="2.0" />
+                                                    </HBox.margin>
+                                                    <graphic>
+                                                        <ImageView fitHeight="33.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                                            <cursor>
+                                                                <Cursor fx:constant="DEFAULT" />
+                                                            </cursor>
+                                                            <image>
+                                                                <Image url="@../Misc/Buildings/Blacksmith/money-bag.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                                </Button>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="TOP_CENTER" layoutX="143.0" layoutY="10.0" prefHeight="200.0" prefWidth="150.0" spacing="5.0">
+                                    <children>
+                                        <Label style="-fx-border-color: black; -fx-border-radius: 3; -fx-background-color: #4B371C;" text="Hammer" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Bookman Old Style" size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="50.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Misc/Items/hammer.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label lineSpacing="1.0" text="+ 1 building  speed" textAlignment="CENTER" wrapText="true" />
+                                        <Label text="+ 2 stone" textAlignment="CENTER" visible="false" wrapText="true" />
+                                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="88.0">
+                                            <children>
+                                                <Label fx:id="catapultGoldCost1" text="50" translateX="-5.0">
+                                                    <font>
+                                                        <Font name="Bookman Old Style" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../Misc/Resources/Coin.png" />
+                                                    </image>
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </ImageView>
+                                            </children>
+                                        </HBox>
+                                        <Label fx:id="buildUpgradeNumberLabel">
+                                            <font>
+                                                <Font name="Bookman Old Style" size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <HBox alignment="CENTER">
+                                            <children>
+                                                <Button contentDisplay="CENTER" graphicTextGap="0.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#buyUpgrade" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: #4B371C; -fx-border-color: black; -fx-background-radius: 50%; -fx-border-radius: 50%;" text="Build" textFill="TRANSPARENT">
+                                                    <cursor>
+                                                        <Cursor fx:constant="CROSSHAIR" />
+                                                    </cursor>
+                                                    <HBox.margin>
+                                                        <Insets top="2.0" />
+                                                    </HBox.margin>
+                                                    <graphic>
+                                                        <ImageView fitHeight="33.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                                            <cursor>
+                                                                <Cursor fx:constant="DEFAULT" />
+                                                            </cursor>
+                                                            <image>
+                                                                <Image url="@../Misc/Buildings/Blacksmith/money-bag.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                                </Button>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="150.0" spacing="5.0">
+                                    <children>
+                                        <Label style="-fx-border-color: black; -fx-border-radius: 3; -fx-background-color: #4B371C;" text="Boots" textFill="WHITE">
+                                            <font>
+                                                <Font name="Bookman Old Style" size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="50.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Misc/Items/boots.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label lineSpacing="1.0" text="+ 2 .player movement  speed" textAlignment="CENTER" wrapText="true" />
+                                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="88.0">
+                                            <children>
+                                                <Label fx:id="knightGoldCost11" text="50" translateX="-5.0">
+                                                    <font>
+                                                        <Font name="Bookman Old Style" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../Misc/Resources/Coin.png" />
+                                                    </image>
+                                                    <HBox.margin>
+                                                        <Insets />
+                                                    </HBox.margin>
+                                                </ImageView>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets top="5.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <Label fx:id="movementSpeedUpgradeNumberLabel">
+                                            <font>
+                                                <Font name="Bookman Old Style Bold" size="12.0" />
+                                            </font>
+                                        </Label>
+                                        <HBox alignment="CENTER">
+                                            <children>
+                                                <Button contentDisplay="CENTER" graphicTextGap="0.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#buyUpgrade" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: #4B371C; -fx-border-color: black; -fx-background-radius: 50%; -fx-border-radius: 50%;" text="Movement" textFill="TRANSPARENT">
+                                                    <cursor>
+                                                        <Cursor fx:constant="CROSSHAIR" />
+                                                    </cursor>
+                                                    <HBox.margin>
+                                                        <Insets top="2.0" />
+                                                    </HBox.margin>
+                                                    <graphic>
+                                                        <ImageView fitHeight="33.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                                            <cursor>
+                                                                <Cursor fx:constant="DEFAULT" />
+                                                            </cursor>
+                                                            <image>
+                                                                <Image url="@../Misc/Buildings/Blacksmith/money-bag.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                                </Button>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <Button mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="21.0" prefWidth="69.0" style="-fx-background-color: #4B371C;" text="Back" textFill="WHITE">
+                            <font>
+                                <Font name="Bookman Old Style" size="18.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+    </content>
+</ScrollPane>

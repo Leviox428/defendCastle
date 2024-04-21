@@ -1,0 +1,36 @@
+.body {
+    -fx-background-image: url('Misc/uvodHrad.png');
+}
+
+.button-menu {   
+    -fx-padding: 10; 
+}
+
+.button-menu:hover {
+    -fx-scale-x: 1.2; 
+    -fx-scale-y: 1.2;
+}
+
+.button-menu > .label {
+    -fx-font-size: 38; 
+}
+
+.mining:hover {
+    -fx-cursor: url("Misc/MouseCursors/mining_cursor.png"), auto;
+}
+
+.wood-gathering:hover {
+    -fx-cursor: url("Misc/MouseCursors/wood_garhering_cursor.png"), auto;
+}
+
+.castle:hover {
+    -fx-cursor: url("Misc/MouseCursors/gold_cursor.png"), auto;
+}
+
+.blacksmith:hover {
+    -fx-cursor: url("Misc/MouseCursors/blacksmith_cursor.png"), auto;
+}
+
+.barracks:hover {
+    -fx-cursor: url("Misc/MouseCursors/army_cursor.png"), auto;
+}

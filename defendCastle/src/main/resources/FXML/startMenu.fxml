@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" spacing="30.0" styleClass="body" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="defendCastle.game.MenuController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#easyMode" prefHeight="80.0" prefWidth="250.0" style="-fx-background-color: #cccccc; -fx-border-color: black;" styleClass="button-menu">
+         <children>
+            <Label text="Easy">
+               <font>
+                  <Font name="Bookman Old Style" size="35.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#mediumMode" prefHeight="80.0" prefWidth="250.0" style="-fx-background-color: #cccccc; -fx-border-color: black;" styleClass="button-menu">
+         <children>
+            <Label text="Medium">
+               <font>
+                  <Font name="Bookman Old Style" size="33.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#hardMode" prefHeight="80.0" prefWidth="250.0" style="-fx-background-color: #cccccc; -fx-border-color: black;" styleClass="button-menu">
+         <children>
+            <Label text="Hard">
+               <font>
+                  <Font name="Bookman Old Style" size="35.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#settings" prefHeight="80.0" prefWidth="250.0" style="-fx-background-color: #cccccc; -fx-border-color: black;" styleClass="button-menu">
+         <children>
+            <Label text="Settings">
+               <font>
+                  <Font name="Bookman Old Style" size="35.0" />
+               </font></Label>
+         </children>
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="32.0" prefWidth="640.0" style="-fx-background-color: #4B371C; -fx-border-radius: 3; -fx-border-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="defendCastle.game.GameStatusController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="28.0" prefWidth="183.0">
+         <children>
+            <Label text="Wave:" textFill="WHITE">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Bookman Old Style Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="waveCounter" text="0/10" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets left="5.0" />
+         </HBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="30.0" prefWidth="253.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="155.0" text="Time till next wave:" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="timer" text="5:00" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+         </children>
+         <HBox.margin>
+            <Insets right="20.0" />
+         </HBox.margin>
+      </HBox>
+      <HBox fx:id="resourcesCounter" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="8.0" style=": ; -fx-background-color: transparent;">
+         <children>
+            <HBox alignment="CENTER" spacing="5.0">
+               <children>
+                  <Label fx:id="goldCounter" text="0" textFill="WHITE" />
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Misc/Resources/Coin.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="5.0">
+               <children>
+                  <Label fx:id="woodCounter" text="0" textFill="WHITE" />
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Misc/Resources/wood.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="59.0" layoutY="11.0" spacing="5.0">
+               <children>
+                  <Label fx:id="stoneCounter" text="0" textFill="WHITE" />
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Misc/Resources/stone.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="106.0" layoutY="11.0" spacing="5.0">
+               <children>
+                  <Label fx:id="foodCounter" text="0" textFill="WHITE" />
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Misc/Resources/food.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="154.0" layoutY="11.0" spacing="5.0">
+               <children>
+                  <Label fx:id="housingCounter" text="0" textFill="WHITE" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Misc/Resources/home.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</HBox>
