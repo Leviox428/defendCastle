@@ -33,14 +33,11 @@ Between each enemy wave, players have a limited preparation phase to fortify the
 |:--:|:--:|
 | ![Screenshot 1](Showcase/menu.png) | ![Screenshot 2](Showcase/game.png) |
 
-<!--
-### 🎥 Demo
-> [🎞️ Watch the Demo Video](https://youtu.be/your-demo-link)  
-or  
-> ![Demo GIF](assets/demo.gif)
 
-*(Keep GIFs under ~5MB for faster loading.)*
--->
+### 🎥 Gameplay
+
+> ![Gameplay](Showcase/gameplay.gif)
+
 ---
 
 ## 💡 Project Highlights
