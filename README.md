@@ -29,9 +29,9 @@ Between each enemy wave, players have a limited preparation phase to fortify the
 ## 🎬 Showcase
 
 ### 🖼️ Screenshots
-| Home / Solar System View | Planet Navigation Example |
+| Menu | Game |
 |:--:|:--:|
-| ![Screenshot 1](developer-portfolio-website/public/images/myPortfolio1.png) | ![Screenshot 2](developer-portfolio-website/public/images/myPortfolio2.png) |
+| ![Screenshot 1](Showcase/menu.png) | ![Screenshot 2](Showcase/game.png) |
 
 <!--
 ### 🎥 Demo
